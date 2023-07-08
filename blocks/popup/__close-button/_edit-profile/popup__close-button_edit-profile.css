@@ -1,0 +1,24 @@
+.popup__close-button_edit-profile {
+    position: absolute;
+    background-image: url(../../../../images/Close\ Icon.svg);
+    background-size: 100% 100%;
+    border: none;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+    right: -40px;
+    top: -40px;
+}
+
+.popup__close-button_edit-profile:hover {
+    opacity: .8;
+}
+
+@media screen and (max-width: 320px) {
+    .popup__close-button_edit-profile {
+        right: 0;
+        top: 16;
+        width: 20px;
+        height: 20px;
+    }
+}

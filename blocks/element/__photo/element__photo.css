@@ -1,0 +1,7 @@
+.element__photo {
+    background-size: 100% 100%;
+    max-width: 282px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
