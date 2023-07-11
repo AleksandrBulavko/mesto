@@ -1,13 +1,12 @@
 .page {
     background: #000000;
     color: #ffffff;
-    margin: 0 auto;
     padding-top: 45px;
     padding-bottom: 60px;
     font-family: 'Inter', 'Arial';
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 890px) {
     .page {
         padding-top: 28px;
         padding-bottom: 36px;
