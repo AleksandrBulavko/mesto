@@ -10,23 +10,23 @@
 
 <body>
     <div class="page">
-        <div class="header">
+        <header class="header">
             <img class="header__logo" src="./images/logo.svg" alt="Логотип">
-        </div>
-        <section class="profile">
-            <div class="profile__user">
-                <img class="profile__avatar" src="./images/Avatar.png" alt="Изображение">
-                <div class="profile__info">
-                    <div class="profile__name-about-me">
-                        <h1 class="profile__name">Жак-Ив Кусто</h1>
-                        <h2 class="profile__about-me">Исследователь океана</h2>
-                    </div>
-                    <button class="profile__edit-button" type="button"></button>
-                </div>
-            </div>
-            <button class="profile__add-button" type="button"></button>
-        </section>
+        </header>
         <main class="content">
+            <section class="profile">
+                <div class="profile__user">
+                    <img class="profile__avatar" src="./images/Avatar.png" alt="Изображение">
+                    <div class="profile__info">
+                        <div class="profile__name-about-me">
+                            <h1 class="profile__name">Жак-Ив Кусто</h1>
+                            <p class="profile__about-me">Исследователь океана</p>
+                        </div>
+                        <button class="profile__edit-button" type="button"></button>
+                    </div>
+                </div>
+                <button class="profile__add-button" type="button"></button>
+            </section>
             <section class="elements">
                 <ul class="elements__list">
                     <li class="element">
@@ -83,20 +83,22 @@
         <footer class="footer">
             <p class="footer__copyright">&#169; 2023 Mesto Russia</p>
         </footer>
-        <div class="popup popup_type-edit-profile">
+        <div class="popup popup_type_edit-profile">
             <div class="popup__container">
-                <button class="popup__close-button popup__close-button_edit-profile" type="button"></button>
+                <button class="popup__close-button popup__close-button_place_edit-profile" type="button"></button>
                 <h2 class="popup__title">Редактировать профиль</h2>
-                <form class="popup__form popup__form_edit-profile" name="form">
-                    <input class="popup__input popup__input_name" name="name" type="text" placeholder="Жак-Ив Кусто">
-                    <input class="popup__input popup__input_about" name="about" type="text"
+                <form class="popup__form popup__form_place_edit-profile" name="form">
+                    <input class="popup__input popup__input_edit-profile_name" name="name" type="text"
+                        placeholder="Жак-Ив Кусто">
+                    <input class="popup__input popup__input_edit-profile_about" name="about" type="text"
                         placeholder="Исследователь океана">
-                    <button class="popup__button-save popup__button-save_edit-profile" type="submit">Сохранить</button>
+                    <button class="popup__button-save popup__button-save_place_edit-profile"
+                        type="submit">Сохранить</button>
                 </form>
             </div>
         </div>
-        <script src="index.js"></script>
     </div>
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>

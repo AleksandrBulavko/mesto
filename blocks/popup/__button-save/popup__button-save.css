@@ -1,17 +1,21 @@
-.popup__button-save_edit-profile {
+.popup__button-save {
+    border: none;
     width: 358px;
     height: 50px;
     background: #000;
     color: #FFF;
     margin: 48px 36px 37px;
+    cursor: pointer;
+    font-family: 'Inter', 'Arial';
+    border-radius: 2px;
 }
 
-.popup__button-save_edit-profile:hover {
+.popup__button-save:hover {
     opacity: .8;
 }
 
 @media screen and (max-width: 320px) {
-    .popup__button-save_edit-profile {
+    .popup__button-save {
         width: 238px;
         height: 46px;
         margin: 45px 22px 25px;

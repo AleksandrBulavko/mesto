@@ -8,10 +8,11 @@
     border: 2px solid #ffffff;
     background-color: transparent;
     padding: 0;
+    cursor: pointer;
 }
 
 .profile__add-button:hover {
-    opacity: .8;
+    opacity: .6;
 }
 
 @media screen and (max-width: 320px) {

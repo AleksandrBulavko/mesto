@@ -1,4 +1,4 @@
-.popup__close-button_edit-profile {
+.popup__close-button {
     position: absolute;
     background-image: url(../../../../images/Close\ Icon.svg);
     background-size: 100% 100%;
@@ -8,14 +8,15 @@
     height: 32px;
     right: -40px;
     top: -40px;
+    cursor: pointer;
 }
 
-.popup__close-button_edit-profile:hover {
+.popup__close-button:hover {
     opacity: .8;
 }
 
 @media screen and (max-width: 320px) {
-    .popup__close-button_edit-profile {
+    .popup__close-button {
         right: 0;
         top: 16;
         width: 20px;
