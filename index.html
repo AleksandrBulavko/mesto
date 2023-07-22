@@ -28,61 +28,21 @@
                 <button class="profile__add-button" type="button"></button>
             </section>
             <section class="elements">
-                <ul class="elements__list">
-                    <li class="element">
-                        <img class="element__photo" src="./images/kirill-pershin-1088404-unsplash.jpg"
-                            alt="Изображение">
-                        <div class="element__description">
-                            <h2 class="element__title">Карачаевск</h2>
-                            <button class="element__like-button" type="button"></button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <img class="element__photo" src="./images/kirill-pershin-1556355-unsplash.jpg"
-                            alt="Изображение">
-                        <div class="element__description">
-                            <h2 class="element__title">Гора Эльбрус</h2>
-                            <button class="element__like-button" type="button"></button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <img class="element__photo" src="./images/kirill-pershin-1404681-unsplash.jpg"
-                            alt="Изображение">
-                        <div class="element__description">
-                            <h2 class="element__title">Домбай</h2>
-                            <button class="element__like-button" type="button"></button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <img class="element__photo" src="./images/kirill-pershin-1088404-unsplash.jpg"
-                            alt="Изображение">
-                        <div class="element__description">
-                            <h2 class="element__title">Гора Эльбрус</h2>
-                            <button class="element__like-button" type="button"></button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <img class="element__photo" src="./images/kirill-pershin-1404681-unsplash.jpg"
-                            alt="Изображение">
-                        <div class="element__description">
-                            <h2 class="element__title">Домбай</h2>
-                            <button class="element__like-button" type="button"></button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <img class="element__photo" src="./images/kirill-pershin-1556355-unsplash.jpg"
-                            alt="Изображение">
-                        <div class="element__description">
-                            <h2 class="element__title">Карачаево-Черкессия</h2>
-                            <button class="element__like-button" type="button"></button>
-                        </div>
-                    </li>
-                </ul>
             </section>
         </main>
         <footer class="footer">
             <p class="footer__copyright">&#169; 2023 Mesto Russia</p>
         </footer>
+        <template id="templateCard">
+            <div class="element">
+                <button class="element__basket" type="button"></button>
+                <img class="element__photo" src="" alt="Изображение">
+                <div class="element__description">
+                    <h2 class="element__title"></h2>
+                    <button class="element__like-button" type="button"></button>
+                </div>
+            </div>
+        </template>
         <div class="popup popup_type_edit-profile">
             <div class="popup__container">
                 <button class="popup__close-button popup__close-button_place_edit-profile" type="button"></button>
@@ -95,6 +55,25 @@
                     <button class="popup__button-save popup__button-save_place_edit-profile"
                         type="submit">Сохранить</button>
                 </form>
+            </div>
+        </div>
+        <div class="popup popup_type_add-card">
+            <div class="popup__container">
+                <button class="popup__close-button popup__close-button_place_add-card" type="button"></button>
+                <h2 class="popup__title">Новое место</h2>
+                <form class="popup__form popup__form_place_add-card" name="form">
+                    <input class="popup__input popup__input_type_title" name="title" type="text" placeholder="Название">
+                    <input class="popup__input popup__input_type_link" name="link" type="text"
+                        placeholder="Ссылка на картинку">
+                    <button class="popup__button-save popup__button-save_place_add-card" type="submit">Создать</button>
+                </form>
+            </div>
+        </div>
+        <div class="popup popup_image">
+            <div class="popup__container-image">
+                <button class="popup__close-button popup__close-button_place_image"></button>
+                <img class="popup__image" src="" alt="картинка">
+                <h2 class="popup__text"></h2>
             </div>
         </div>
     </div>

@@ -1,4 +1,8 @@
 .elements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 17px;
     margin: 51px auto 0;
     max-width: 880px;
 }
@@ -7,5 +11,7 @@
     .elements {
         margin: 46px auto 0;
         max-width: 282px;
+        column-gap: 0;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
