@@ -6,29 +6,29 @@ const inputAbout = document.querySelector('.popup__input_type_about');
 const formEditProfile = document.querySelector('.popup__form_place_edit-profile');
 const formName = document.querySelector('.profile__name');
 const formAbout = document.querySelector('.profile__about-me');
-const addButton = document.querySelector('.profile__add-button');
+const profileAddButton = document.querySelector('.profile__add-button');
 const popupAddCard = document.querySelector('.popup_type_add-card');
 const popupCloseButtonAddCard = document.querySelector('.popup__close-button_place_add-card');
 const inputTitle = document.querySelector('.popup__input_type_title');
 const inputLink = document.querySelector('.popup__input_type_link');
 const formAddCard = document.querySelector('.popup__form_place_add-card');
-const title = document.querySelector('.element__title');
-const link = document.querySelector('.element__photo');
+const elementTitle = document.querySelector('.element__title');
+const elementLink = document.querySelector('.element__photo');
 const elements = document.querySelector('.elements');
 const popupImage = document.querySelector('.popup_image');
 const popupCloseButtonImage = document.querySelector('.popup__close-button_place_image');
 const image = document.querySelector('.popup__image');
-const text = document.querySelector('.popup__text');
-
+const popupText = document.querySelector('.popup__text');
 
 function openPopup(popup) {
     popup.classList.add('popup_opened')
 }
+
 function closePopup(popup) {
     popup.classList.remove('popup_opened')
 }
 
-function handleFormSubmit(evt) {
+function profileHandleFormSubmit(evt) {
     evt.preventDefault()
     formName.textContent = inputName.value;
     formAbout.textContent = inputAbout.value;
@@ -43,10 +43,10 @@ profileEditButton.addEventListener('click', () => {
 
 popupCloseButtonProfile.addEventListener('click', () => closePopup(popuptypeEditProfile))
 formEditProfile.addEventListener('submit', function (event) {
-    handleFormSubmit(event)
+    profileHandleFormSubmit(event)
 })
 
-addButton.addEventListener('click', () => {
+profileAddButton.addEventListener('click', () => {
     openPopup(popupAddCard)
 })
 
@@ -66,7 +66,7 @@ function createCard(title, link) {
     cloneCard.querySelector('.element__photo').addEventListener('click', function () {
         openPopup(popupImage)
         image.setAttribute('src', link)
-        text.textContent = title
+        popupText.textContent = title
     })
     elements.prepend(cloneCard)
 }
@@ -108,9 +108,22 @@ function addCard(event) {
     event.preventDefault()
     createCard(inputTitle.value, inputLink.value)
     closePopup(popupAddCard)
+    inputTitle.value = ''
+    inputLink.value = ''
 }
 
 formAddCard.addEventListener('submit', addCard)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
